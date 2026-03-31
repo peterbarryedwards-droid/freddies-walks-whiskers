@@ -505,9 +505,14 @@ function Contact() {
 
   const handle = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
 
-  const submit = e => {
+  const submit = async e => {
     e.preventDefault()
-    setSent(true)
+    const res = await fetch('https://formspree.io/f/mlgonvro', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(form),
+    })
+    if (res.ok) setSent(true)
   }
 
   const input = {
