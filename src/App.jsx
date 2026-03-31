@@ -138,7 +138,7 @@ function Hero() {
         fontWeight: 600, lineHeight: 1.2,
         marginBottom: '1rem', maxWidth: 520,
       }}>
-        Your pet, in safe hands
+        Your pets, in safe hands
       </h1>
 
       <div className="fu2" style={{
@@ -147,7 +147,7 @@ function Hero() {
         maxWidth: 460, marginBottom: '2rem',
         textAlign: 'center',
       }}>
-        <p>Qualified, reliable dog walking and pet care across Winchester.</p>
+        <p>Dog walking, drop-in visits and house sitting across Winchester, for dogs, cats and small pets.</p>
         <p style={{ marginTop: '0.5rem' }}>A free meet and greet before every first booking.</p>
       </div>
 
@@ -156,6 +156,7 @@ function Hero() {
           <Paw size={16} color="#fff" /> Book a meet and greet
         </a>
         <a href="#services" className="btn btn-outline">See services</a>
+        <a href="#about" className="btn btn-outline">About Freddie</a>
       </div>
     </section>
   )
@@ -166,7 +167,7 @@ function TrustBar() {
   const items = [
     'Free meet and greet',
     'Fully insured',
-    'Level 2 Animal Management',
+    'Level 2 Animal Management Diploma',
     'Winchester based',
   ]
   return (
@@ -212,7 +213,7 @@ function Services() {
       title: 'Drop-in Visits',
       accent: C.orange,
       pricing: [
-        { label: 'Dogs', price: '£13' },
+        { label: 'Dogs', price: '£15' },
         { label: 'Cats', price: '£12' },
       ],
       body: 'A 30-minute visit while you are out. Feeding, fresh water, and some time with your pet so they are not sitting alone all day.',
@@ -606,6 +607,12 @@ function Footer() {
             {label}
           </a>
         ))}
+      </div>
+      <div style={{ marginBottom: '1.2rem' }}>
+        <a href="https://www.petbusinessinsurance.co.uk/public-liability.aspx" target="_blank" rel="noopener noreferrer" title="Covered by Pet Business Insurance — public liability and pet care cover">
+          <img src="https://www.petbusinessinsurance.co.uk/img/acoveredby.png" alt="Covered by Pet Business Insurance" style={{ height: 48, width: 'auto', opacity: 0.85 }} />
+        </a>
+        <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.78rem', marginTop: '0.4rem' }}>Public liability and pet care insurance</p>
       </div>
       <p style={{ color: 'rgba(255,255,255,0.25)', fontSize: '0.78rem' }}>
         &copy; {new Date().getFullYear()} Freddie's Walks and Whiskers. All rights reserved.
