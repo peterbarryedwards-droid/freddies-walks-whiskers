@@ -298,7 +298,7 @@ function Services() {
           <p style={{ color: C.muted, fontWeight: 600, fontSize: '0.9rem', lineHeight: 1.65, marginBottom: '1rem' }}>
             You will find me on Rover if you prefer to use an app. But booking directly through this site works just as well. I hold my own dedicated pet care insurance which covers every booking regardless of how you find me. Rover's Guarantee is a useful safety net but it is not a regulated insurance policy and has some limitations worth knowing about. Either way, your pet is covered. Booking direct also means no platform fees on either side.
           </p>
-          <a href="https://www.rover.com" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ fontSize: '0.85rem', padding: '0.55rem 1.2rem' }}>
+          <a href="https://www.rover.com/members/frederick-e-reliable-local-energetic/" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ fontSize: '0.85rem', padding: '0.55rem 1.2rem' }}>
             View my Rover profile
           </a>
         </div>
