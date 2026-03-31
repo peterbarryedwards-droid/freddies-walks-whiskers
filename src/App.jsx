@@ -141,13 +141,15 @@ function Hero() {
         Your pet, in safe hands
       </h1>
 
-      <p className="fu2" style={{
+      <div className="fu2" style={{
         fontSize: 'clamp(1rem, 2.8vw, 1.15rem)',
         color: C.muted, fontWeight: 600, lineHeight: 1.6,
         maxWidth: 460, marginBottom: '2rem',
+        textAlign: 'center',
       }}>
-        Qualified, reliable dog walking and pet care across Winchester. A free meet and greet before every first booking.
-      </p>
+        <p>Qualified, reliable dog walking and pet care across Winchester.</p>
+        <p style={{ marginTop: '0.5rem' }}>A free meet and greet before every first booking.</p>
+      </div>
 
       <div className="fu3" style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap', justifyContent: 'center' }}>
         <a href="#contact" className="btn btn-primary">
@@ -325,10 +327,16 @@ function About() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
           <div style={{ color: '#fff' }}>
-            <p style={{ color: 'rgba(255,255,255,0.65)', fontWeight: 800, fontSize: '0.8rem', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.7rem' }}>About Freddie</p>
-            <h2 style={{ fontFamily: font.display, fontSize: 'clamp(1.7rem, 4vw, 2.3rem)', fontWeight: 600, marginBottom: '1.2rem', lineHeight: 1.2 }}>
-              Not just a dog walker
-            </h2>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1.2rem', marginBottom: '1.2rem', flexWrap: 'wrap' }}>
+              <img src="/freddie.jpg" alt="Freddie Edwards"
+                style={{ width: 80, height: 80, borderRadius: '50%', objectFit: 'cover', border: '3px solid rgba(255,255,255,0.3)', flexShrink: 0 }} />
+              <div>
+                <p style={{ color: 'rgba(255,255,255,0.65)', fontWeight: 800, fontSize: '0.8rem', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.4rem' }}>About Freddie</p>
+                <h2 style={{ fontFamily: font.display, fontSize: 'clamp(1.7rem, 4vw, 2.3rem)', fontWeight: 600, lineHeight: 1.2 }}>
+                  Not just a dog walker
+                </h2>
+              </div>
+            </div>
             <p style={{ fontSize: '1.02rem', lineHeight: 1.75, fontWeight: 600, opacity: 0.92, marginBottom: '1rem' }}>
               I have been working with animals in Winchester since I was 15. That includes running the weekly puppy socialisation sessions at Pets Corner, hands-on care at ScenterBarks Dog Day Care and Difford Kennels, and I currently volunteer at Second Chance Animal Rescue in Southampton.
             </p>
