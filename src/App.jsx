@@ -165,10 +165,10 @@ function Hero() {
 /* ── Trust bar ────────────────────────────────────────────── */
 function TrustBar() {
   const items = [
-    'Free meet and greet',
-    'Fully insured',
-    'Level 2 Animal Management Diploma',
-    'Winchester based',
+    { label: 'Free meet and greet', href: null },
+    { label: 'Fully insured', href: 'https://www.petbusinessinsurance.co.uk/public-liability.aspx' },
+    { label: 'Level 2 Animal Management Diploma', href: null },
+    { label: 'Winchester based', href: null },
   ]
   return (
     <div style={{ background: C.teal, padding: '0.9rem 1rem', overflowX: 'auto' }}>
@@ -181,7 +181,11 @@ function TrustBar() {
             color: '#fff', fontWeight: 700, fontSize: '0.88rem',
             display: 'flex', alignItems: 'center', gap: '0.4rem', whiteSpace: 'nowrap',
           }}>
-            <Paw size={13} color="rgba(255,255,255,0.7)" /> {item}
+            <Paw size={13} color="rgba(255,255,255,0.7)" />
+            {item.href
+              ? <a href={item.href} target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline', textUnderlineOffset: '3px' }}>{item.label}</a>
+              : item.label
+            }
           </span>
         ))}
       </div>
@@ -297,7 +301,7 @@ function Services() {
         }}>
           <p style={{ fontWeight: 800, fontSize: '0.95rem', marginBottom: '0.5rem' }}>Book however suits you</p>
           <p style={{ color: C.muted, fontWeight: 600, fontSize: '0.9rem', lineHeight: 1.65, marginBottom: '1rem' }}>
-            You will find me on Rover if you prefer to use an app. But booking directly through this site works just as well. I hold my own dedicated pet care insurance which covers every booking regardless of how you find me. Rover's Guarantee is a useful safety net but it is not a regulated insurance policy and has some limitations worth knowing about. Either way, your pet is covered. Booking direct also means no platform fees on either side.
+            You will find me on Rover if you prefer to use an app. But booking directly through this site works just as well. I hold my own <a href="https://www.petbusinessinsurance.co.uk/public-liability.aspx" target="_blank" rel="noopener noreferrer" style={{color: '#fff', textDecoration: 'underline', textUnderlineOffset: '3px'}}>dedicated pet care insurance</a> which covers every booking regardless of how you find me. Rover's Guarantee is a useful safety net but it is not a regulated insurance policy and has some limitations worth knowing about. Either way, your pet is covered. Booking direct also means no platform fees on either side.
           </p>
           <a href="https://www.rover.com/members/frederick-e-reliable-local-energetic/" target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ fontSize: '0.85rem', padding: '0.55rem 1.2rem' }}>
             View my Rover profile
